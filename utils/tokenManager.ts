@@ -1,4 +1,4 @@
-export function TokenManager() {
+export function createTokenManager() {
     let secureToken: string | null = null;
 
     return {
@@ -20,3 +20,6 @@ export function TokenManager() {
 
 
 }
+
+const manager = createTokenManager();
+manager.setToken("my-secret-123");
